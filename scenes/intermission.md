@@ -16,13 +16,13 @@ Game.FORCE_CANT_SKIP = true;
 publish("show_stats");
 ```
 
-n2: FEARS THIS ROUND:
+n2: :פחדים ששומשו בסיבוב הזה
 
-i: #harm# *BEING HARMED:* {{_.INTERMISSION_STAGE==1 ? _.attack_harm_ch1 : _.attack_harm_ch2}}
+i: #harm# *:פחד מלהיפגע* {{_.INTERMISSION_STAGE==1 ? _.attack_harm_ch1 : _.attack_harm_ch2}}
 
-i: #alone# *BEING UNLOVED:* {{_.INTERMISSION_STAGE==1 ? _.attack_alone_ch1 : _.attack_alone_ch2}}
+i: #alone# *:פחד מלהיות לא אהוב* {{_.INTERMISSION_STAGE==1 ? _.attack_alone_ch1 : _.attack_alone_ch2}}
 
-i: #bad# *BEING A BAD PERSON:* {{_.INTERMISSION_STAGE==1 ? _.attack_bad_ch1 : _.attack_bad_ch2}}
+i: #bad# *:פחד מלהיות אדם רע* {{_.INTERMISSION_STAGE==1 ? _.attack_bad_ch1 : _.attack_bad_ch2}}
 
 
 ```
@@ -31,7 +31,7 @@ Game.FORCE_CANT_SKIP = false;
 Game.CLICK_TO_ADVANCE = true;
 ```
 
-n5: (game auto-saved! it's ok to quit & continue later)
+n5: (.המשחק נשמר אוטומטית! זה בסדר לצאת ולחזור אחר כך)
 
 ```
 Game.clearAll();
