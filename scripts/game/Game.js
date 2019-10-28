@@ -492,9 +492,12 @@ Game.executeText = function(line){
 				span = document.createElement("span");
 				if(chr=="*"){
 					// else, empty. can't NOT add span, coz screws up indexing.
-				}else{
-					span.innerHTML = isItalicized ? "<i>"+chr+"</i>" : chr;
+					span.style.color = "transparent";
 				}
+				if(isItalicized){
+					span.style.fontStyle = "italic";
+				}
+				span.innerHTML = chr;
 				span.style.opacity = 0;
 				div.appendChild(span);
 
